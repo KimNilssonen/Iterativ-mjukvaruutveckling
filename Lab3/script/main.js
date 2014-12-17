@@ -6,7 +6,7 @@ var main = {
     name : document.getElementById("uNameInput"),
     pass : document.getElementById("uPassInput"),
     submit : document.getElementById("submit"),
-    
+    reg : document.getElementById("reg"),
 
     // init function som körs när fönstret laddas.
     init: function(){
@@ -15,6 +15,11 @@ var main = {
             console.log("Clicked worked!");
             e.preventDefault();
             main.person();
+        };
+        
+        main.reg.onclick = function (e){
+            e.preventDefault();
+            window.location = "register.html";
         };
     },
     
