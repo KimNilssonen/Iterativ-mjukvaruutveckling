@@ -17,12 +17,13 @@ var main = {
         var submit = document.getElementById("submit");
         var reg = document.getElementById("reg");
         
+        // Klivk funktioner. En för att logga in...
         submit.onclick = function(e){
             console.log("Clicked worked!");
             e.preventDefault();
             main.test(main.username, main.password);
         };
-        
+        // ...och en för att komma till en registreringssida.
         reg.onclick = function(e){
             console.log("Clicked worked!");
             e.preventDefault();
